@@ -1,0 +1,28 @@
+@import './../shared.scss';
+
+.untangible {
+  &.bomb {
+    display: flex;
+    position: absolute;
+    z-index: 2;
+
+    width: $block-size - 2px;
+    height: $block-size - 2px;
+
+    background-image: url('./../assets/textures/bomb.gif');
+    background-size: cover;
+    background-color: #f00;
+  }
+
+  &.explosion {
+    display: flex;
+    position: absolute;
+    z-index: 2;
+
+    width: $block-size;
+    height: $block-size;
+
+    background-image: url('./../assets/textures/explosion.gif');
+    background-size: cover;
+  }
+}

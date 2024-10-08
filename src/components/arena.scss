@@ -1,0 +1,32 @@
+@import './../shared.scss';
+
+.container {
+  .arena {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2px;
+
+    margin: 0 auto;
+    width: $block-size * 13;
+    background-color: transparent;
+
+    // perspective: 32rem;
+    // transform: rotateX(51deg) rotateZ(43deg);
+
+    border-radius: 5px;
+    transition:
+      .4s ease-in-out transform,
+      .4s ease-in-out box-shadow;
+
+    &__row {
+      display: flex;
+      gap: 2px;
+
+      &__column {
+        position: relative;
+        width: $block-size;
+        height: $block-size;
+      }
+    }
+  }
+}
